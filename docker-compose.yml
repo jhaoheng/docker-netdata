@@ -1,0 +1,9 @@
+version: '3'
+services:
+  netdata:
+    build: .
+    image: firehol/netdata:tmp
+    ports: 
+      - 19999:19999/tcp
+    tty: true
+    container_name: netdata
